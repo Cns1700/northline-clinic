@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT & Records Request | Northline Clinic</title>
+  <meta name="description" content="Request medical records or IT help from Northline Clinic in Mobile, Alabama. Name and email required.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="topbar-extra">Mon.–Fri. 7:30 a.m.–5:30 p.m.</span>
+      <a href="tel:+12516616829">1 (251) 661-6829</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="10" fill="#0e7a72"/>
+          <path fill="#fff" d="M20 6.5 26.5 16h-13L20 6.5z"/>
+          <rect x="17.75" y="17" width="4.5" height="16" rx="0.6" fill="#fff"/>
+          <rect x="12" y="22.25" width="16" height="4.5" rx="0.6" fill="#fff"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">Northline Clinic</span>
+          <span class="logo-place">Mobile, Alabama</span>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Directory</a></li>
+          <li><a href="department.html">Primary Care</a></li>
+          <li><a href="request.html" class="is-current" aria-current="page">IT & Records</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+12516616829">1 (251) 661-6829</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">IT and records</p>
+        <h1>Send a request</h1>
+        <p class="lede">Use this form for portal help, chart copies, or a release of information. Name and email are required. Do not include real medical details on this demo site.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap contact-layout">
+        <div>
+          <form id="request-form" name="it-records-request" action="/request.html" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <input type="hidden" name="form-name" value="it-records-request">
+            <p class="visually-hidden">
+              <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+
+            <div class="field">
+              <label for="name">Name <span class="req">(required)</span></label>
+              <input id="name" name="name" type="text" autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="email">Email <span class="req">(required)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="request-type">Request type</label>
+              <select id="request-type" name="request-type">
+                <option value="">Select a type</option>
+                <option value="medical-records">Medical records</option>
+                <option value="release-of-information">Release of information</option>
+                <option value="it-portal">IT / patient portal</option>
+                <option value="billing">Billing question</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <p class="form-note">This is a fictional clinic. Submissions on the live site are stored by Netlify Forms for the portfolio demo only.</p>
+          </form>
+
+          <div class="form-thanks" id="form-thanks" hidden tabindex="-1">
+            <h2>Thank you</h2>
+            <p>We received your request and will reply to the email you provided during Monday–Friday hours, 7:30 a.m.–5:30 p.m. If it is urgent, call 1 (251) 661-6829.</p>
+          </div>
+        </div>
+
+        <aside class="contact-aside" aria-label="Clinic details">
+          <div class="stack">
+            <span class="contact-label">Phone</span>
+            <p><a href="tel:+12516616829">1 (251) 661-6829</a></p>
+          </div>
+          <div class="stack">
+            <span class="contact-label">Hours</span>
+            <p>Monday–Friday<br>7:30 a.m.–5:30 p.m.</p>
+          </div>
+          <div class="stack">
+            <span class="contact-label">Clinic</span>
+            <address>
+              88 Springhill Ave<br>
+              Mobile, AL 36604
+            </address>
+          </div>
+          <div class="stack">
+            <span class="contact-label">Email</span>
+            <p><a href="mailto:records@northlineclinic.com">records@northlineclinic.com</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">Northline Clinic</p>
+        <p>Outpatient care on Springhill Avenue</p>
+      </div>
+      <div>
+        <address>
+          88 Springhill Ave<br>
+          Mobile, AL 36604
+        </address>
+      </div>
+      <div>
+        <p><a href="tel:+12516616829">1 (251) 661-6829</a></p>
+        <p><a href="mailto:hello@northlineclinic.com">hello@northlineclinic.com</a></p>
+        <p>Mon.–Fri.<br>7:30 a.m.–5:30 p.m.</p>
+      </div>
+      <div>
+        <ul class="footer-nav">
+          <li><a href="index.html">Directory</a></li>
+          <li><a href="department.html">Primary Care</a></li>
+          <li><a href="request.html">IT & Records</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-copy">
+      <p>© <span id="year">2026</span> Northline Clinic. Fictional clinic for a website project. Do not send real medical information.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

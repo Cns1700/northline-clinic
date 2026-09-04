@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff Directory | Northline Clinic</title>
+  <meta name="description" content="Find physicians, nurses, and clinic staff at Northline Clinic, 88 Springhill Ave, Mobile, AL. 1 (251) 661-6829.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="topbar-extra">Mon.–Fri. 7:30 a.m.–5:30 p.m.</span>
+      <a href="tel:+12516616829">1 (251) 661-6829</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="10" fill="#0e7a72"/>
+          <path fill="#fff" d="M20 6.5 26.5 16h-13L20 6.5z"/>
+          <rect x="17.75" y="17" width="4.5" height="16" rx="0.6" fill="#fff"/>
+          <rect x="12" y="22.25" width="16" height="4.5" rx="0.6" fill="#fff"/>
+        </svg>
+        <span class="logo-text">
+          <span class="logo-name">Northline Clinic</span>
+          <span class="logo-place">Mobile, Alabama</span>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="is-current" aria-current="page">Directory</a></li>
+          <li><a href="department.html">Primary Care</a></li>
+          <li><a href="request.html">IT & Records</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+12516616829">1 (251) 661-6829</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">Staff directory</p>
+        <h1>People at Northline</h1>
+        <p class="lede">Physicians, nurses, and clinic leaders at 88 Springhill Ave. Search by name. Primary Care has its own page. For portal or records help, use the request form.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="directory-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="directory-heading">Clinic staff</h2>
+          <div class="search-panel">
+            <label for="staff-search">Search by name</label>
+            <input id="staff-search" type="search" name="staff-search" placeholder="Try Whitfield or Chen" autocomplete="off">
+            <p class="search-status" id="search-status" aria-live="polite">Showing all 10 staff members.</p>
+          </div>
+        </div>
+
+        <ul class="staff-grid">
+          <li class="staff-card" data-staff-name="Amara Whitfield">
+            <span class="staff-mark" aria-hidden="true">AW</span>
+            <div>
+              <h3 class="staff-name">Dr. Amara Whitfield</h3>
+              <p class="staff-title">Medical Director</p>
+              <a class="staff-dept" href="department.html">Primary Care</a>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Luis Ortega">
+            <span class="staff-mark" aria-hidden="true">LO</span>
+            <div>
+              <h3 class="staff-name">Dr. Luis Ortega</h3>
+              <p class="staff-title">Family Physician</p>
+              <a class="staff-dept" href="department.html">Primary Care</a>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Elena Brooks">
+            <span class="staff-mark" aria-hidden="true">EB</span>
+            <div>
+              <h3 class="staff-name">Elena Brooks, RN</h3>
+              <p class="staff-title">Charge Nurse</p>
+              <a class="staff-dept" href="department.html">Primary Care</a>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Priya Nandakumar">
+            <span class="staff-mark" aria-hidden="true">PN</span>
+            <div>
+              <h3 class="staff-name">Dr. Priya Nandakumar</h3>
+              <p class="staff-title">Cardiologist</p>
+              <span class="staff-dept">Cardiology</span>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Mei Chen">
+            <span class="staff-mark" aria-hidden="true">MC</span>
+            <div>
+              <h3 class="staff-name">Mei Chen, RN</h3>
+              <p class="staff-title">Clinical Nurse</p>
+              <span class="staff-dept">Cardiology</span>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Jordan Hale">
+            <span class="staff-mark" aria-hidden="true">JH</span>
+            <div>
+              <h3 class="staff-name">Jordan Hale, PA-C</h3>
+              <p class="staff-title">Physician Assistant</p>
+              <span class="staff-dept">Urgent Care</span>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Samuel Crowe">
+            <span class="staff-mark" aria-hidden="true">SC</span>
+            <div>
+              <h3 class="staff-name">Dr. Samuel Crowe</h3>
+              <p class="staff-title">Orthopedic Physician</p>
+              <span class="staff-dept">Orthopedics</span>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Tessa Marin">
+            <span class="staff-mark" aria-hidden="true">TM</span>
+            <div>
+              <h3 class="staff-name">Tessa Marin, LCSW</h3>
+              <p class="staff-title">Behavioral Health Counselor</p>
+              <span class="staff-dept">Behavioral Health</span>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Nadine Okonkwo">
+            <span class="staff-mark" aria-hidden="true">NO</span>
+            <div>
+              <h3 class="staff-name">Dr. Nadine Okonkwo</h3>
+              <p class="staff-title">Physician</p>
+              <span class="staff-dept">Women’s Health</span>
+            </div>
+          </li>
+          <li class="staff-card" data-staff-name="Malik Reeves">
+            <span class="staff-mark" aria-hidden="true">MR</span>
+            <div>
+              <h3 class="staff-name">Malik Reeves</h3>
+              <p class="staff-title">Clinic Administrator</p>
+              <span class="staff-dept">Administration</span>
+            </div>
+          </li>
+        </ul>
+
+        <p class="empty-state" id="staff-empty" hidden>No one in the directory matches that name. Clear the search box to see everyone.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">Northline Clinic</p>
+        <p>Outpatient care on Springhill Avenue</p>
+      </div>
+      <div>
+        <address>
+          88 Springhill Ave<br>
+          Mobile, AL 36604
+        </address>
+      </div>
+      <div>
+        <p><a href="tel:+12516616829">1 (251) 661-6829</a></p>
+        <p><a href="mailto:hello@northlineclinic.com">hello@northlineclinic.com</a></p>
+        <p>Mon.–Fri.<br>7:30 a.m.–5:30 p.m.</p>
+      </div>
+      <div>
+        <ul class="footer-nav">
+          <li><a href="index.html">Directory</a></li>
+          <li><a href="department.html">Primary Care</a></li>
+          <li><a href="request.html">IT & Records</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-copy">
+      <p>© <span id="year">2026</span> Northline Clinic. Fictional clinic for a website project. Do not send real medical information.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

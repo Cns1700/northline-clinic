@@ -1,6 +1,6 @@
 # Northline Clinic
 
-Fictional outpatient clinic website. Static HTML, CSS, and a little JavaScript. No build step.
+Fictional outpatient clinic website using static HTML, CSS, and a little JavaScript.
 
 Open `index.html` in a browser, or serve the folder with any static file server.
 
@@ -12,6 +12,5 @@ Open `index.html` in a browser, or serve the folder with any static file server.
 | `css/styles.css` | All styles |
 | `js/main.js` | Mobile menu, staff search loop, request form check |
 
-Clinic details (phone, hours, address) are written into each HTML page. Change them in every file, or the header and footer will not match.
-
-The request form uses Netlify Forms (`data-netlify="true"`, honeypot field). Live submissions show up in the Netlify dashboard. The in-browser preview is not Netlify, so the thank-you message still appears after a valid name and email.
+Clinic details (phone, hours, address) are written into each HTML page.
+The request form uses Netlify Forms (`data-netlify="true"`, honeypot field). Live submissions show up in the Netlify dashboard. The in-browser preview is not Netlify, so the thank-you message will still appear after a valid name and email.

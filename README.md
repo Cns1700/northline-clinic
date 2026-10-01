@@ -4,7 +4,7 @@ Fictional outpatient clinic site. Built as a portfolio piece.
 
 **Live:** [cns1700.github.io/northline-clinic](https://cns1700.github.io/northline-clinic/)
 
-This is a small multi-page demo with a staff-directory search. Paid client jobs I take are usually a **single landing page** with file handoff. This repo shows a calmer professional layout plus a search loop I can walk through out loud.
+This is a small multi-page demo with a staff-directory search. Paid client jobs I take are usually a **single landing page** with file handoff. This repo shows a calmer professional layout plus a search loop I can go through if explanation is needed.
 
 ---
 
